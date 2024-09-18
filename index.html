@@ -3,248 +3,200 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <title>Muskid</title>
-
-    <!-- fonts import -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <meta name="color-scheme" content="dark"/> -->
+    <!-- font import -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
       rel="stylesheet"
     />
-    <!-- font family -->
-    <style>
-      .font-Poppins {
-        font-family: "Poppins", sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Muskid</title>
   </head>
   <body>
-    <header class="bg-[#141414] w-full">
-      <nav
-        class="relative flex justify-between items-center gap-5 mx-4 xl:mx-[108px] pt-[30px] px-4 py-5 text-slate-200 font-Poppins"
-      >
-        <img src="./assets/logo.png" alt="logo" />
-
-        <!-- Hidden Checkbox -->
-        <input type="checkbox" id="menu-toggle" class="hidden peer" />
-
-        <!-- Hamburger Icon (Label for Checkbox) -->
-        <label for="menu-toggle" class="block md:hidden cursor-pointer">
-          <div class="w-6 h-1 bg-white mb-1"></div>
-          <div class="w-6 h-1 bg-white mb-1"></div>
-          <div class="w-6 h-1 bg-white"></div>
-        </label>
-
-        <!-- Nav Links -->
-        <ul
-          class="hidden peer-checked:flex md:flex flex-col md:flex-row gap-4 lg:gap-8 md:w-auto ml-auto justify-start items-start md:items-center text-sm lg:text-lg font-Poppins whitespace-nowrap bg-black md:bg-transparent absolute md:relative top-full right-0 px-8 w-3/4 py-10 rounded-md md:p-0 transition-all duration-300 ease-in-out text-left"
-        >
-          <li class="hover:border-b-2 hover:border-[#F0FF45]">For Artists</li>
-          <li class="hover:border-b-2 hover:border-[#F0FF45]">For Producers</li>
-          <li class="hover:border-b-2 hover:border-[#F0FF45]">About</li>
-          <li class="hover:border-b-2 hover:border-[#F0FF45]">Contact</li>
-          <button
-            class="bg-[#F0FF45] text-black px-3 py-3 rounded-lg transition-transform transform hover:scale-105 hover:bg-black hover:text-[#F0FF45]"
-          >
-            Request Invite
-          </button>
-          <li>
-            <span class="text-[#F0FF45]">EN</span>|<a href="indexFrench.html"
-              >FR</a
+    <header class="header">
+      <nav class="nav">
+        <img src="assets/logo.png" alt="logo image" class="nav__logo" />
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a href="#" class="nav__link">For Artists</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">For Producers</a>
+          </li>
+          <li class="nav__item"><a href="#" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="#" class="nav__link nav__link--btn">Request Invite</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">
+              <span class="nav__link--show">EN</span>|FR</a
             >
           </li>
         </ul>
+        <div class="nav__burger">
+          <img
+            class="menu-icon"
+            src="assets/burger-menu.svg"
+            title="Burger Menu"
+            alt="Burger Menu"
+          />
+        </div>
       </nav>
+      <div class="header__title">
+        <div class="header__hero--container">
+          <div class="header__hero--banner"></div>
+          <img
+            src="assets/hero_image.png"
+            alt="musician"
+            class="header__hero--img"
+          />
+        </div>
 
-      <section
-        class="sm:grid sm:grid-cols-2 gap-4 lg:gap-10 sm:items-center mx-4 xl:mx-[108px] pt-12 sm:pt-5 pb-2 sm:pb-0"
-      >
-        <img
-          alt="woman playing guitar"
-          src="https://images.unsplash.com/photo-1484959014842-cd1d967a39cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
-          class="h-full w-full object-cover sm:h-[calc(100%_-_2rem)] sm:self-end sm:rounded-ss-[30px] md:h-[calc(100%_-_4rem)] md:rounded-ss-[60px]"
-        />
-        <div class="pl-[0.4px] md:pl-1 lg:pl-4 lg:py-24">
-          <div class="font-Poppins">
-            <div class="mt-12 flex flex-col gap-3 md:gap-[34px]">
-              <div
-                class="font-bold text-white flex flex-col items-start gap-2"
-                style="font-size: clamp(1.75rem, 2.5vw, 3rem); line-height: 1.2"
-              >
-                <h2 class="whitespace-normal">
-                  <span class="text-[#F0FF45]">Digital</span> music solutions
-                </h2>
-                <h2 class="whitespace-normal">
-                  for <span class="text-[#F0FF45]">indie</span> artists and
-                </h2>
-                <h2 class="whitespace-normal">producers.</h2>
-              </div>
+        <div class="header__text">
+          <h1 class="header__text--heading">
+            Digital music solutions <br />
+            for indie artists and <br />
+            producers
+          </h1>
+          <div class="header__text--sub">
+            <h2>Development</h2>
+            <h2>Distribution</h2>
+            <h2>Marketing</h2>
+          </div>
+        </div>
+      </div>
+    </header>
 
-              <div
-                class="flex gap-4 flex-wrap font-bold text-white"
-                style="font-size: clamp(1rem, 1.5vw, 1.5rem)"
-              >
-                <h2 class="text-[#F0FF45]">Development</h2>
-                <h2 class="text-[#F0FF45]">Distribution</h2>
-                <h2 class="text-[#F0FF45]">Marketing</h2>
-              </div>
+    <section class="section" id="section--1">
+      <h2>Top Releases</h2>
+      <div class="section__content--music">
+        <div class="section__content--music-container">
+          <div class="section__content--music--list">
+            <img
+              src="assets/music_avatar.png"
+              alt=""
+              class="section__content--music--img"
+            />
+            <div class="text-container">
+              <span class="name">Abati</span>
+              <span class="nickname">Anodaboy</span>
+              <span class="date">February 21, 2023</span>
+              <button class="listen-btn">Listen</button>
+            </div>
+          </div>
+          <div class="section__content--music--list">
+            <img
+              src="assets/music_avatar.png"
+              alt=""
+              class="section__content--music--img"
+            />
+            <div class="text-container">
+              <span class="name">Abati</span>
+              <span class="nickname">Anodaboy</span>
+              <span class="date">February 21, 2023</span>
+              <button class="listen-btn">Listen</button>
+            </div>
+          </div>
+          <div class="section__content--music--list">
+            <img
+              src="assets/music_avatar.png"
+              alt=""
+              class="section__content--music--img"
+            />
+            <div class="text-container">
+              <span class="name">Abati</span>
+              <span class="nickname">Anodaboy</span>
+              <span class="date">February 21, 2023</span>
+              <button class="listen-btn">Listen</button>
+            </div>
+          </div>
+          <div class="section__content--music--list">
+            <img
+              src="assets/music_avatar.png"
+              alt=""
+              class="section__content--music--img"
+            />
+            <div class="text-container">
+              <span class="name">Abati</span>
+              <span class="nickname">Anodaboy</span>
+              <span class="date">February 21, 2023</span>
+              <button class="listen-btn">Listen</button>
             </div>
           </div>
         </div>
-      </section>
-    </header>
-    <section class="mx-4 xl:mx-[108px] font-Poppins pt-12 pb-16">
-      <h2 class="mb-8 text-[32px] md:text-[32px]">Top Releases</h2>
-      <div
-        class="grid grid-cols-1 lg:grid-cols-2 gap-10 border-l-2 px-4 md:px-10"
-      >
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-          <div
-            class="bg-white shadow-lg rounded-lg p-4 flex items-center gap-4 border border-gray-200"
-          >
-            <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
-            <p class="flex flex-col gap-2">
-              <span class="text-lg font-semibold">Abati</span>
-              <span class="text-md text-gray-700">Anodaboy</span>
-              <span class="text-sm text-gray-500">21 May 2024</span>
-            </p>
-          </div>
-          <div
-            class="bg-white shadow-lg rounded-lg p-4 flex items-center gap-4 border border-gray-200"
-          >
-            <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
-            <p class="flex flex-col gap-2">
-              <span class="text-lg font-semibold">Abati</span>
-              <span class="text-md text-gray-700">Anodaboy</span>
-              <span class="text-sm text-gray-500">21 May 2024</span>
-            </p>
-          </div>
-          <div
-            class="bg-white shadow-lg rounded-lg p-4 flex items-center gap-4 border border-gray-200"
-          >
-            <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
-            <p class="flex flex-col gap-2">
-              <span class="text-lg font-semibold">Abati</span>
-              <span class="text-md text-gray-700">Anodaboy</span>
-              <span class="text-sm text-gray-500">21 May 2024</span>
-            </p>
-          </div>
-          <div
-            class="bg-white shadow-lg rounded-lg p-4 flex items-center gap-4 border border-gray-200"
-          >
-            <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
-            <p class="flex flex-col gap-2">
-              <span class="text-lg font-semibold">Abati</span>
-              <span class="text-md text-gray-700">Anodaboy</span>
-              <span class="text-sm text-gray-500">21 May 2024</span>
-            </p>
-          </div>
-          <div
-            class="bg-white shadow-lg rounded-lg p-4 flex items-center gap-4 border border-gray-200"
-          >
-            <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
-            <p class="flex flex-col gap-2">
-              <span class="text-lg font-semibold">Abati</span>
-              <span class="text-md text-gray-700">Anodaboy</span>
-              <span class="text-sm text-gray-500">21 May 2024</span>
-            </p>
-          </div>
-          <div
-            class="bg-white shadow-lg rounded-lg p-4 flex items-center gap-4 border border-gray-200"
-          >
-            <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
-            <p class="flex flex-col gap-2">
-              <span class="text-lg font-semibold">Abati</span>
-              <span class="text-md text-gray-700">Anodaboy</span>
-              <span class="text-sm text-gray-500">21 May 2024</span>
-            </p>
-          </div>
-        </div>
-
-        <div
-          class="bg-[#F0FF45] rounded-md p-6 md:p-10 font-Poppins mx-auto md:ml-[4rem] self-center h-full w-auto shadow-lg"
-        >
-          <p class="flex flex-col gap-2 font-bold text-[32px]">
-            <span>let the world hear </span>
-            <span>you have been </span>
-            <span>cooking</span>
+        <div class="section__content--music--card">
+          <p>
+            Let the world hear <br />
+            what you’ve been <br />
+            cooking.
           </p>
-          <button
-            class="bg-black px-3 py-3 rounded-lg font-bold text-[#F0FF45] mt-5 hover:bg-[#141414]"
-          >
-            Create a Release +
-          </button>
+          <button class="release-btn">Create a Release +</button>
         </div>
       </div>
     </section>
-    <section
-      class="bg-[#141414] px-4 xl:px-[108px] py-16 sm:py-28 md:py-36 font-Poppins"
-    >
-    <h2
-    class="text-white text-center sm:text-left leading-relaxed"
-    style="font-size: clamp(1.75rem, 2.5vw, 2.5rem);"
-  >
-    <b>
-      We have simplified the journey for
-      <span class="text-[#F0FF45]">independent</span> artists and producers.
-    </b>
-    <br class="md:hidden" />
-    No matter the stage you are, we have something extra to offer.
-  </h2>
-  
+    <section class="section section__dark" id="section--2">
+      <h2>
+        <span class="section__dark--heading"
+          >We have simplified the journey for independent artists <span class="hide-on-mobile"><br /></span>
+          and producers .</span
+        >
+        No matter the stage you are, we have a<span class="hide-on-mobile"><br /></span>
+        something extra to offer.
+      </h2>
     </section>
-
-    <section
-      class="px-4 md:px-[108px] py-36 font-Poppins grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10"
-    >
-      <div
-        class="flex flex-col gap-10 rounded-md p-10 justify-center items-center"
-      >
-        <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
+    <section class="section" id="section--3">
+      <div>
+        <img src="" alt="" />
         <p>
-          We distribute your music to over 200 streaming platforms and networks
-          worldwide
+          We distribute your music to over 100 streaming platforms and networks
+          worldwide.
         </p>
       </div>
-      <div
-        class="flex flex-col gap-10 rounded-md p-10 justify-center items-center"
-      >
-        <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
+      <div>
+        <img src="" alt="" />
         <p>
-          We support artiste and producers with structures, tools and strategies
+          We support artists and producers with structures, tools and strategies
           to grow
         </p>
       </div>
-      <div
-        class="flex flex-col gap-10 rounded-md p-10 justify-center items-center"
-      >
-        <div class="bg-[#D9D9D9] w-24 h-24 rounded-lg"></div>
+      <div>
+        <img src="" alt="" />
         <p>
           We take away the stress of marketing, making it easier with attainable
-          goals
+          goals.
         </p>
       </div>
     </section>
-
-    <footer
-      class="bg-[#141414] px-4 sm:px-[60px] md:px-[108px] py-36 font-Poppins flex flex-col gap-16 justify-center"
-    >
-      <ul
-        class="text-white flex flex-col sm:flex-row gap-6 sm:gap-16 lg:gap-28 text-xl sm:text-2xl lg:text-4xl justify-center"
-      >
-        <li class="hover:border-b-2 hover:border-b-[#F0FF45]">Podcast</li>
-        <li class="hover:border-b-2 hover:border-b-[#F0FF45]">Webinars</li>
-        <li class="hover:border-b-2 hover:border-b-[#F0FF45]">Blog</li>
-        <li class="hover:border-b-2 hover:border-b-[#F0FF45]">Community</li>
+    <footer class="footer">
+      <ul class="footer__links">
+        <li class="footer__link--item">
+          <a href="" class="footer__link">Podcast</a>
+        </li>
+        <li class="footer__link--item">
+          <a href="" class="footer__link">Webinars</a>
+        </li>
+        <li class="footer__link--item">
+          <a href="" class="footer__link">Blog</a>
+        </li>
+        <li class="footer__link--item">
+          <a href="" class="footer__link">Community</a>
+        </li>
       </ul>
-      <button
-        class="bg-[#F0FF45] text-black px-3 py-3 rounded-lg self-start w-auto sm:self-center font-bold text-xl transition-transform transform hover:scale-105 hover:bg-black hover:text-[#F0FF45]"
-      >
-        Request Invite
-      </button>
+      <a href="" class="footer__link--btn">Request Invite</a>
     </footer>
+    <div class="modal hidden">
+      <img
+        src="assets/tiny-lettering-coming-soon-with-hourglass-calendar-and-notification-sign-text.png"
+        alt="coming soon illustration"
+      />
+      <button class="close--btn">
+        <img src="assets/icons8-close-50.png" alt="icon close" />
+      </button>
+    </div>
+
+    <div class="overlay hidden"></div>
+
+    <script src="script.js"></script>
   </body>
 </html>
