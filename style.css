@@ -313,8 +313,7 @@ img {
 .footer__link:link,
 .footer__link:visited {
   color: #fff;
-
-  font-size: clamp(1.3rem, 0.262rem + 4.154vw, 4rem);
+  font-size: clamp(1.3rem, 0.443rem + 2.286vw, 2.5rem);
   text-decoration: none;
 }
 .footer__link:hover {
