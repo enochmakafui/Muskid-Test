@@ -173,7 +173,8 @@ img {
   transform: translateY(8rem);
 }
 .section h2 {
-  font-size: clamp(1.5rem, 1rem + 1.333vw, 2.2rem);  font-weight: 400;
+  font-size: clamp(1.5rem, 1rem + 1.333vw, 2.2rem);
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 .section__content--music {
@@ -260,7 +261,7 @@ img {
   padding: 0.9rem 1rem;
   border-radius: 0.5rem;
   font-family: inherit;
-  font-size: clamp(1rem, 0.5rem + 1.333vw, 1.7rem);
+  font-size: clamp(1.3rem, 1.157rem + 0.381vw, 1.5rem);
   border: none;
   align-self: flex-start;
 }
@@ -459,8 +460,8 @@ img {
 
   .section__content--music--list {
     gap: 2rem;
-    padding: 1rem;
-    width: 70%;
+    padding: 0.5rem 1rem;
+    width: max-content;
   }
   .section__content--music--img {
     width: 8rem;
