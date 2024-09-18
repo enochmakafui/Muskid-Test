@@ -173,8 +173,7 @@ img {
   transform: translateY(8rem);
 }
 .section h2 {
-  font-size: clamp(1.1rem, 0.677rem + 1.692vw, 2.2rem);
-  font-weight: 400;
+  font-size: clamp(1.5rem, 1rem + 1.333vw, 2.2rem);  font-weight: 400;
   margin-bottom: 2rem;
 }
 .section__content--music {
@@ -251,7 +250,7 @@ img {
   gap: 4rem;
 }
 .section__content--music--card p {
-  font-size: clamp(3rem, 2.286rem + 1.905vw, 4rem);
+  font-size: clamp(2.5rem, 1.429rem + 2.857vw, 4rem);
   font-weight: 700;
 }
 
@@ -453,7 +452,8 @@ img {
   }
   .section__content--music {
     grid-template-columns: 1fr;
-    padding-left: 1rem;
+    padding-left: 2rem;
+    margin-left: 1rem;
     gap: 2.5rem;
   }
 
